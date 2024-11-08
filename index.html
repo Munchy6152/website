@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+
 </head>
 <body>
     <!--nav-->
@@ -16,12 +22,14 @@
         <img src="/images/schoollogo.jpg" alt="">
         <div class="navigation">
             <ul>
+                <i id="menu-close" class="fas fa-times" style="color: white;"></i>
                 <li><a href="#">Admission</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Academics</a></li>
                 <li><a href="#">News & Events</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <img id="menu-btn" src="images/download.png" alt="">
         </div>
     </nav>
 
@@ -34,7 +42,6 @@
              <div class="btn">
                 <a class="blue" href="#">Basic One</a>
                 <a class="yellow" href="#">Basic Two</a>
-                <a class="blue" href="#">Basic Three</a>
              </div> 
     </section>
 
@@ -48,7 +55,10 @@
             <div class="fea-box">
                 <i class="fa fa-graduation-cap" style="color: #f00fb4;"></i>
                 <h3>Scholarship Now</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, deleniti!.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, deleniti!. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam corrupti ab dolorum perferendis 
+                    vel autem, omnis eum consequuntur deleniti saepe   
+                    magni ipsam quis nobis reprehenderit recusandae, natus ipsum vero rem?
                      Lorem ipsum dolor sit amet consectetur.</p>
                 
             </div>
@@ -56,14 +66,16 @@
                 <i class="fas fa-graduation-cap" style="color: #f00fb4;"></i>
                 <h3>Scholarship Now</h3>
                 <p>LLorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, deleniti!.
-                    Lorem ipsum dolor sit amet consectetur..</p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente sit repellat fugiat pariatur quia alias exercitationem 
+                   nemo veniam laboriosam neque et iste deleniti quibusdam, facere rem vitae nesciunt deserunt? Lorem ipsum dolor sit amet consectetur..</p>
                 
             </div>
             <div class="fea-box">
                 <i class="fas fa-graduation-cap" style="color: #f00fb4;"></i>
                 <h3>Scholarship Now</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, deleniti!.
-                    Lorem ipsum dolor sit amet consectetur.</p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores numquam officiis, voluptas eius adipisci, voluptatem recusandae laborum perferendis ea 
+                    fugit quod accusantium quasi veritatis natus atque, illo soluta. Error, harum?Lorem ipsum dolor sit amet consectetur.</p>
                 
             </div>
         </div>
@@ -144,6 +156,15 @@
         </div>
 
     </section>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
 
 
 
